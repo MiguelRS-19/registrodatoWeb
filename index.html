@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Personal</title>
+  <link rel="shortcut icon" href="img/personal.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="header__dato">
+    <nav class="nav container__nav">
+      <div class="nav__logo">
+        <a href="#" class="nav__title">Registro Personal</a>
+      </div>
+      <ul class="nav__link nav__link-menu ">
+        <img src="img/close.svg" alt="" class="nav__close">
+        <li class="nav__items"><a href="" class="nav__links">Inicio</a></li>
+        <li class="nav__items"><a href="" class="nav__links">Registrar datos</a></li>
+        <li class="nav__items"><a href="" class="nav__links">Listar datos</a></li>
+        <li class="nav__items"><a href="" class="nav__links">Buscar datos</a></li>
+        <li class="nav__items"><a href="" class="nav__links">Ordenar alfabetica</a></li>
+      </ul>
+      <div class="nav__menu">
+        <img src="img/menu.svg" alt="" class="nav__img">
+      </div>
+    </nav>
+  </header>
+
+  <section class="container inicio">
+    <h1 class="inicio__title">Registro de datos personales</h1>
+    <div class="inicio__perfil">
+      <img src="img/profile.svg" alt="" class="inicio__img">
+      <img src="img/list.svg" alt="" class="inicio__img2">
+    </div>
+  </section>
+
+  <main>
+    <section class="container container__caja">
+      <div class="container caja__container">
+        <section class="caja__dato">
+          <h2 class="subtitle">Datos</h2>
+          <form class="form__caja" >
+            <div class="caja__grup">
+              <label for="nombreLabel label__caja">Nombre:</label>
+              <div class="caja__nombre input__caja">
+                <input type="text" name="textnombre" id="textnombre" placeholder="*Nombre">
+              </div>
+              <div class="caja__button">
+                <i class="fa-sharp far fa-pen-to-square fas__icon" title="Editar"></i>
+              </div>
+            </div>
+            <div class="caja__grup">
+              <label for="apellidoLabel label__caja">Apellidos:</label>
+              <div class="caja__apellidos input__caja">
+                <input type="text" name="textapellido" id="textapellido" placeholder="*Apellidos">
+              </div>
+              <div class="caja__button ">
+                <i class="fas fa-trash-can fas__icon" title="Eliminar"></i>
+              </div>
+            </div>
+            <div class="caja__grup">
+              <label for="edadLabel label__caja">Edad:</label>
+              <div class="caja__edad input__caja">
+                <input type="text" name="textedad" id="textedad" placeholder="*Edad">
+              </div>
+              <div class="caja__button">
+                <i class="fas fa-list fas__icon" title="Cantidad registrada"></i>
+              </div>
+            </div>
+            <div class="caja__grup">
+              <label for="ecivilLabel label__caja">Estado Civil:</label>
+              <div class="caja__ecivil input__caja">
+                <input type="text" name="textecivil" id="textecivil" placeholder="*Estado Civil">
+              </div>
+              <div class="caja__button">
+                <i class="fas fa-print fas__icon" title="Imprimir"></i>
+              </div>
+            </div>
+            <div class="caja__grup">
+              <label for="dniLabel label__caja">DNI:</label>
+              <div class="caja__dni input__caja">
+                <input type="text" name="textdni" id="textdni" placeholder="*DNI">
+              </div>
+              <div class="caja__button">
+                <i class="fa-sharp fas fa-file-pdf fas__icon" title="PDF"></i>
+              </div>
+            </div>
+            <div class="caja__grup">
+              <label for="rucLabel label__caja">RUC:</label>
+              <div class="caja__rec input__caja">
+                <input type="text" name="textruc" id="textruc" placeholder="*RUC">
+              </div>
+              <div class="caja__button">
+                <img src="img/excel.svg" class="fas__icon" title="Excel" alt="">
+              </div>
+            </div>
+            <br>
+            <div class="caja__btn">
+              <button class="btn__1" type="submit">Guardar</button>
+              <button class="btn__2" type="submit">Limpiar</button>
+              <button class="btn__3" type="submit">Cancelar</button>
+              <!--<input type="submit" value="Guardar">
+              <input type="button" value="Limpiar">
+              <input type="button" value="Cancelar">-->
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="informacion__container">
+        <section class="lista__dato">
+          <h2 class="subtitle">Listar datos</h2>
+          <div class="caja__grup">
+            <label for="listaLabel">Listar datos:</label>
+            <div class="lista__datos">
+              <select name="" id="">
+                <option value="" hidden>Selecconar</option>
+                <option value="0">Miguel</option>
+                <option value="1">Juan</option>
+                <option value="2">Julio</option>
+                <option value="3">Cesar</option>
+              </select>
+              <!---<input type="text" value=""><i class='fa fa-chevron-up'></i>-->
+            </div>
+            <div class="lista__radio">
+              <input type="radio" name="" id="" title="ADS">
+              <input type="radio" name="" id="" title="DES">
+              <input type="radio" name="" id="" title="Nombre x alfabetica">
+              <input type="radio" name="" id="" title="X apellidos">
+              <input type="radio" name="" id="" title="X codigo">
+            </div>
+          </div>
+          <div class="lista__combox">
+      
+          </div>
+        </section>
+        
+        <section class="buscar__dato">
+          <h2 class="subtitle">Buscar datos</h2>
+          <div class="caja__grup">
+            <label for="buscarLabel">Buscar datos:</label>
+            <div class="buscar__datos">
+              <input type="text" value="" title="Buscando" placeholder="Buscando...">
+              <i class='fa fa-search'></i>
+              <button type="submit" title="Buscador">Buscar</button>
+            </div>
+          </div>
+          <div class="container__grup">
+            <div class="buscar__combox">
+        
+            </div>
+            <figure class="buscar__picture">
+              <img src="img/Rectangle.png" alt="" class="picture__img">
+            </figure>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
