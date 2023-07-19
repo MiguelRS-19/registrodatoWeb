@@ -339,12 +339,6 @@ button:hover{
 
 /*Media queries*/
 
-@media (max-width: 360px) {
-  .container{
-    width: 100%;
-    max-width: 275px;
-  }
-}
 
 @media (max-width: 600px) {
 
@@ -378,10 +372,11 @@ button:hover{
   
   .nav__logo{
     flex-grow: 1;
+    text-align: center;
   }
 
   .nav__title{
-    font-size: 1.8em;
+    font-size: 1.5rem;
   }
 
   .nav__links{
@@ -417,6 +412,7 @@ button:hover{
 
   .inicio__title{
     flex-grow: 2;
+    font-size: 1rem;
   }
 
   .inicio__perfil{
@@ -437,12 +433,12 @@ button:hover{
 
   .container{
     width: 100%;
-    max-width: 572px;
+    max-width: 520px;
   }
   
   .container__nav{
     width: 100%;
-    max-width: 572px;
+    max-width: 520px;
   }
 
   .container__caja{
@@ -453,12 +449,12 @@ button:hover{
   
   /*caja de datos */
   .caja__container{
-    width: 572px;
+    width: 520px;
     height: 520px;
   }
 
   .caja__dato{
-    width: 572px;
+    width: 520px;
     height: 480px;
     padding: 20px;
     padding-left: 20px;
@@ -466,20 +462,23 @@ button:hover{
   }
 
   .informacion__container{
-    width: 572px;
+    width: 520px;
     height: 520px;
   }
   
   .lista__dato{
     padding: 20px;
-    width: 572px;
+    width: 520px;
     height: 205px;
   }
 
+  .lista__combox{
+    width: 480px;
+  }
   
   .buscar__dato{
     padding: 20px;
-    width: 572px;
+    width: 520px;
     height: 205px;
     padding-left: 20px;
     background: #978EFD;
@@ -489,10 +488,7 @@ button:hover{
   }
   
   .input__caja input{
-    border-radius: 5px;
-    border: 2px solid #D9D9D9;
-    background: #FDFDFD;
-    width: 300px;
+    width: 250px;
     height: 30px;
   }
 
@@ -523,6 +519,128 @@ button:hover{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-top: -20px;
     margin-bottom: 20px;
-    margin-left: 15px;
+    margin-left: 0.2px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .nav__title{
+    font-size: 1rem;
+  }
+
+  .container{
+    width: 100%;
+    max-width: 310px;
+  }
+  
+  .container__nav{
+    width: 100%;
+    max-width: 310px;
+  }
+
+  .container__caja{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*caja de datos */
+  .caja__container{
+    width: 310px;
+    height: 520px;
+  }
+
+  .caja__dato{
+    width: 310px;
+    height: 480px;
+    padding: 10px;
+    padding-left: 10px;
+  
+  }
+
+  .informacion__container{
+    width: 310px;
+    height: 520px;
+  }
+  
+  .lista__dato{
+    padding: 20px;
+    width: 310px;
+    height: 220px;
+  }
+
+  .lista__combox{
+    width: 270px;
+  }
+  
+  .buscar__dato{
+    padding: 20px;
+    width: 310px;
+    height: 205px;
+    padding-left: 20px;
+    background: #978EFD;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.25);
+  
+  }
+  
+  .input__caja input{
+    width: 110px;
+    height: 30px;
+  }
+
+  .caja__btn{
+    margin-top: -20px;
+  }
+  .caja__btn button{
+    width: 80px;
+    height: 30px;
+    margin-left: 6px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .caja__button{
+    width: 25px;
+    height: 30px;
+    border-radius: 4px;
+    background: #FFD763;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: 00.1px;
+  }
+
+  .fas__icon {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  #textnombre{
+    margin-left: 24px;
+  }
+  
+  #textapellido{
+    margin-left: 17px;
+  }
+  
+  #textedad{
+    margin-left: 48px;
+  }
+  
+  #textecivil{
+    margin-left: 0px;
+  }
+  
+  #textdni{
+    margin-left: 57px;
+  }
+  
+  #textruc{
+    margin-left: 53px;
   }
 }
